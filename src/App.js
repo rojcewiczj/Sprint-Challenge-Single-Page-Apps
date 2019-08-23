@@ -2,7 +2,7 @@ import React from "react";
 import TabNav from "./components/TabNav.js";
 import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList.js";
-
+import LocationList from "./components/LocationsList";
 
 export default function App() {
   return (
@@ -10,6 +10,7 @@ export default function App() {
       <Header />
       <TabNav /> 
       <CharacterList />
+      <LocationList />
     </main>
   );
 }
