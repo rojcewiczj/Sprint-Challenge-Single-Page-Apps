@@ -16,12 +16,12 @@ export default function TabNav() {
 return (
    
     <div>
-  <div class="ui attached tabular menu">
-    <a class="active item">Tab 1</a>
-    <a class="item">Tab 2</a>
-    <a class="item">Tab 3</a>
+  <div className="ui attached tabular menu">
+    <a className="active item">Tab 1</a>
+    <a className="item">Tab 2</a>
+    <a className="item">Tab 3</a>
   </div>
-  <div class="ui bottom attached segment active tab">Tab 1 Content</div>
+  <div className="ui bottom attached segment active tab">Tab 1 Content</div>
 </div>
 )
 };
