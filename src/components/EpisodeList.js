@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios'
 import EpisodeCard from "./EpisodeCard";
-
+import { Link } from "react-router-dom";
 
 export default function EpisodeList() {
  // TODO: Add useState to track data from useEffect
@@ -28,7 +28,8 @@ export default function EpisodeList() {
    <section className="character-list grid-view">
 
      {episodes.map(episode => (
-     <EpisodeCard name={episode.name} type={episode.air_date} dimension={episode.episode} /> ))}
+          <Link to={`/Episode/${episode.id}`}>  
+     <EpisodeCard name={episode.name} type={episode.air_date} dimension={episode.episode} /> </Link>))}
        
    </section>
  );

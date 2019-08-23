@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios'
 import LocationCard from "./LocationCard";
-
+import { Link } from "react-router-dom";
 
 export default function LocationsList() {
  // TODO: Add useState to track data from useEffect
@@ -28,7 +28,8 @@ export default function LocationsList() {
    <section className="character-list grid-view">
 
      {locations.map(location => (
-     <LocationCard name={location.name} type={location.type} dimension={location.dimension} /> ))}
+       <Link to={`/Location/${location.id}`}>  
+     <LocationCard name={location.name} type={location.type} dimension={location.dimension} /> </Link> ))}
        
    </section>
  );
