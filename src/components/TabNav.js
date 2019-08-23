@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 // Take a look at React Semantic UI tabs 
 // https://react.semantic-ui.com/modules/tab/
 export default function TabNav() {
-     const panes = [
+      const panes = [
         { menuItem: 'Tab 1', render: () => <Tab.Pane>Tab 1 Content</Tab.Pane> },
         { menuItem: 'Tab 2', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
         { menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
@@ -14,14 +14,15 @@ export default function TabNav() {
       
       const TabExampleBasic = () => <Tab panes={panes} />
 return (
-   
+  
     <div>
-  <div className="ui attached tabular menu">
-    <a className="active item">Tab 1</a>
-    <a className="item">Tab 2</a>
-    <a className="item">Tab 3</a>
+  <div class="ui attached tabular menu">
+    <a class="active item">HomePage</a>
+    <a class="item">Characters</a>
+    <a class="item">Locations</a>
+    <a class="item">Episodes</a>
   </div>
-  <div className="ui bottom attached segment active tab">Tab 1 Content</div>
+ 
 </div>
 )
 };
